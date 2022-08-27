@@ -1,0 +1,12 @@
+.button {
+  padding: 10px 20px;
+  border-radius: 6px;
+  line-height: 20px;
+  @include font($size: 1.6rem, $height: 2rem, $weight: 700);
+}
+.button_colored {
+  background: $color-default;
+  a {
+    color: $color-light;
+  }
+}
