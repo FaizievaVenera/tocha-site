@@ -1,0 +1,24 @@
+.header__wrapper {
+  padding: 32px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-text {
+  @include font($size: 2.8rem, $height: 2.1rem, $weight: 700);
+  display: flex;
+  align-items: center;
+}
+
+.header__buttons {
+  display: flex;
+}
+
+.header__button {
+  background-color: $color-violet;
+  margin-right: 12px;
+  a {
+    color: $color-default;
+  }
+}
