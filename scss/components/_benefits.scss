@@ -1,0 +1,26 @@
+.benefits {
+  padding: 129px 0 0 0;
+}
+.benefits__title {
+  padding-bottom: 68px;
+}
+.benefits__block > *:not(:first-child) {
+  padding: 48px 0 0 0;
+}
+.benefit_block {
+  display: flex;
+}
+
+.benefit__icon {
+  padding-right: 26px;
+}
+.benefit__description {
+  display: flex;
+  flex-direction: column;
+}
+.benefit_title {
+  padding-bottom: 8px;
+}
+.benefit__text {
+  width: 428px;
+}

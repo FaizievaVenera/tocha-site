@@ -1,0 +1,57 @@
+.tariffs__title {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+  p {
+    @include font($size: 1.6rem, $height: 2.6rem, $weight: 700);
+  }
+}
+.tariff__block {
+  width: 350px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+  border-radius: 6px;
+  &:not(:last-child) {
+    padding-right: 30px;
+  }
+}
+.tariff_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include font($size: 2.4rem, $height: 4.8rem, $weight: 800);
+  background: $color-tariff-block;
+  color: $color-default;
+  border-radius: 6px 6px 0 0;
+  padding: 7px 0;
+}
+.tariff_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.tariff_value,
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tariff_value {
+  @include font($size: 2.8rem, $height: 4rem, $weight: 700);
+  padding: 37px 30px 0 30px;
+  p {
+    text-align: center;
+  }
+}
+.price {
+  @include font($size: 2rem, $height: 3rem, $weight: 500);
+  padding: 32px 29px 46px 29px;
+  p {
+    text-align: center;
+  }
+}
+
+.tariff_button {
+  padding: 0 33px 50px 30px;
+}

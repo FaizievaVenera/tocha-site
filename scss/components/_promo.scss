@@ -2,5 +2,21 @@
   padding: 92px 0 0 0;
 }
 .promo__description {
-  padding: 35px 0 0 0;
+  margin: 35px 0 0 0;
+}
+span {
+  color: $color-default;
+  font-weight: 800;
+}
+.promo__title_colored {
+  color: $color-default;
+}
+.promo__text {
+  @include font($size: 2.4rem, $height: 3.4rem, $weight: 400);
+  padding: 24px 0 0 0;
+  width: 482px;
+}
+.promo__button {
+  display: inline-block;
+  margin: 32px 0 0 0;
 }

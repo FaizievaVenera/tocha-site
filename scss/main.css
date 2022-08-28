@@ -94,6 +94,28 @@ h6 {
 /*--------------------*/
 body {
   font-family: "Gilroy";
+  color: #1d2530;
+}
+
+h1 {
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 6rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 3.2rem;
+}
+
+.text {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.6rem;
 }
 
 /*Components*/
@@ -120,7 +142,175 @@ body {
 }
 
 .promo__description {
-  padding: 35px 0 0 0;
+  margin: 35px 0 0 0;
+}
+
+span {
+  color: #685ed6;
+  font-weight: 800;
+}
+
+.promo__title_colored {
+  color: #685ed6;
+}
+
+.promo__text {
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.4rem;
+  padding: 24px 0 0 0;
+  width: 482px;
+}
+
+.promo__button {
+  display: inline-block;
+  margin: 32px 0 0 0;
+}
+
+.benefits {
+  padding: 129px 0 0 0;
+}
+
+.benefits__title {
+  padding-bottom: 68px;
+}
+
+.benefits__block > *:not(:first-child) {
+  padding: 48px 0 0 0;
+}
+
+.benefit_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.benefit__icon {
+  padding-right: 26px;
+}
+
+.benefit__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.benefit_title {
+  padding-bottom: 8px;
+}
+
+.benefit__text {
+  width: 428px;
+}
+
+.tariffs__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 40px;
+}
+
+.tariffs__title p {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.6rem;
+}
+
+.tariff__block {
+  width: 350px;
+  -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+  border-radius: 6px;
+}
+
+.tariff__block:not(:last-child) {
+  padding-right: 30px;
+}
+
+.tariff_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 4.8rem;
+  background: rgba(104, 94, 214, 0.05);
+  color: #685ed6;
+  border-radius: 6px 6px 0 0;
+  padding: 7px 0;
+}
+
+.tariff_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.tariff_value,
+.price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tariff_value {
+  font-size: 2.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 4rem;
+  padding: 37px 30px 0 30px;
+}
+
+.tariff_value p {
+  text-align: center;
+}
+
+.price {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 3rem;
+  padding: 32px 29px 46px 29px;
+}
+
+.price p {
+  text-align: center;
+}
+
+.tariff_button {
+  padding: 0 33px 50px 30px;
 }
 
 /*Pages*/
@@ -177,8 +367,15 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.layout-3-columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
