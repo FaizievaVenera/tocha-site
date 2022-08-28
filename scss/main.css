@@ -237,6 +237,7 @@ span {
 }
 
 .tariff_title {
+  width: 350px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
