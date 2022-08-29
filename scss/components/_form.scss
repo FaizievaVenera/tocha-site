@@ -1,0 +1,28 @@
+.form_img {
+  margin-top: 170px;
+  background: url(../img/BG.png), url(../img/Vector2.svg);
+  /*$color-default;
+  width: 1110px;
+  height: 288px;
+  border-radius: 5px;*/
+}
+.form_image {
+  padding: 17px 80px 0 86px;
+}
+.form__title {
+  padding: 48px 185px 32px 0;
+  @include font($size: 3.3rem, $height: 4.1rem, $weight: 800);
+  color: $color-light;
+}
+.form__input {
+  padding: 14px 16px;
+  border-radius: 5px 0px 0px 5px;
+  //width: 248px;
+}
+.form__button {
+  padding: 14px 24px;
+  color: $color-light;
+  @include font($size: 1.4rem, $height: 2rem, $weight: 700);
+  background-color: $color-button;
+  border-radius: 0px 5px 5px 0px;
+}

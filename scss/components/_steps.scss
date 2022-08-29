@@ -1,0 +1,45 @@
+.blocks__title {
+  padding: 100px 0 54px 0;
+}
+.steps__blocks {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  .steps__blocks > :nth-child(2) {
+    align-items: center;
+  }
+}
+.step-number {
+  background: $color-violet;
+  border-radius: 100px;
+  width: 72px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include font($size: 3rem, $height: 3rem, $weight: 700);
+  color: $color-default;
+}
+.step-title {
+  @include font($size: 1.8rem, $height: 2.8rem, $weight: 700);
+  padding: 16px 0 4px;
+}
+
+.step-block {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 255px;
+}
+.step-text {
+  @include font($size: 1.6rem, $height: 2.6rem, $weight: 400);
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.two {
+  padding-top: 65px;
+}
+.background {
+}

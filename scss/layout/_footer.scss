@@ -1,0 +1,8 @@
+.footer {
+  background: $color-background-footer;
+}
+.footer__content {
+  @include font($size: 1.4rem, $height: 2.4rem, $weight: 400);
+  padding: 25px 0 25px 0;
+  color: $color-light;
+}

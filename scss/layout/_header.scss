@@ -13,12 +13,10 @@
 
 .header__buttons {
   display: flex;
+  justify-content: left;
 }
 
 .header__button {
   background-color: $color-violet;
   margin-right: 12px;
-  a {
-    color: $color-default;
-  }
 }
