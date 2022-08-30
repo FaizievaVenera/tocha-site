@@ -3,8 +3,17 @@
   border-radius: 6px;
   line-height: 20px;
   @include font($size: 1.6rem, $height: 2rem, $weight: 700);
+  border: none;
+  transition: all 0.3s;
 }
 .button_colored {
   background: $color-default;
   color: $color-light;
+
+  &:hover {
+    background: $color-button-hover;
+  }
+  &:active {
+    background: $color-button-active;
+  }
 }

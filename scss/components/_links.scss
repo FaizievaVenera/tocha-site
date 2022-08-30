@@ -1,0 +1,38 @@
+.links {
+  background: $color-text;
+}
+.links__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-top: 104px;
+}
+.logo {
+  padding-top: 7px;
+  padding-right: 130px;
+  a {
+    color: $color-light;
+    padding-top: 10px;
+  }
+}
+
+.link__title {
+  @include font($size: 2rem, $height: 3rem, $weight: 500);
+  color: $color-ul;
+  padding: 0 0 32px 0;
+}
+li {
+  @include font($size: 1.6rem, $height: 2.6rem, $weight: 400);
+  color: $color-ul;
+  &:not(:last-child) {
+    padding-bottom: 12px;
+  }
+}
+.about-us {
+  width: 160px;
+}
+.support {
+  padding-right: 100px;
+  width: 20%px;
+  padding-bottom: 78px;
+}

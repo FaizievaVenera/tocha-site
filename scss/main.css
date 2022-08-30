@@ -127,11 +127,20 @@ h3 {
   font-style: normal;
   font-weight: 700;
   line-height: 2rem;
+  border: none;
 }
 
 .button_colored {
   background: #685ed6;
   color: #fff;
+}
+
+.button_colored:hover {
+  background: #33afe1;
+}
+
+.button_colored:active {
+  background: #18e1f7;
 }
 
 .promo__wrapper {
@@ -396,6 +405,7 @@ span {
   width: 1110px;
   height: 288px;
   border-radius: 5px;*/
+  margin-bottom: 90px;
 }
 
 .form_image {
@@ -414,6 +424,22 @@ span {
 .form__input {
   padding: 14px 16px;
   border-radius: 5px 0px 0px 5px;
+  width: 248px;
+  margin-right: -2px;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.4rem;
+  background: #f4f5f7;
+  border: 1px solid #f4f5f7;
+}
+
+.form__input:focus {
+  border: 1px solid #605dec;
+}
+
+.form__input:hover {
+  border: 1px solid #e8e6f8;
 }
 
 .form__button {
@@ -425,6 +451,65 @@ span {
   line-height: 2rem;
   background-color: #18191f;
   border-radius: 0px 5px 5px 0px;
+}
+
+.links {
+  background: #1d2530;
+}
+
+.links__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 104px;
+}
+
+.logo {
+  padding-top: 7px;
+  padding-right: 130px;
+}
+
+.logo a {
+  color: #fff;
+  padding-top: 10px;
+}
+
+.link__title {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 3rem;
+  color: #f4f5f7;
+  padding: 0 0 32px 0;
+}
+
+li {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.6rem;
+  color: #f4f5f7;
+}
+
+li:not(:last-child) {
+  padding-bottom: 12px;
+}
+
+.about-us {
+  width: 160px;
+}
+
+.support {
+  padding-right: 100px;
+  width: 20%px;
+  padding-bottom: 78px;
 }
 
 /*Pages*/
@@ -457,6 +542,10 @@ span {
           align-items: center;
 }
 
+.header__logo a {
+  color: #1d2530;
+}
+
 .header__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -469,6 +558,15 @@ span {
 .header__button {
   background-color: #f1e4ff;
   margin-right: 12px;
+}
+
+.header__button:hover {
+  background: #c39bfb;
+}
+
+.header__button:active {
+  background: #685ed6;
+  color: #fff;
 }
 
 .wrapper {
