@@ -1,0 +1,88 @@
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
+  transition: all 0.8 ease 0s;
+}
+.popup.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup__wrapper {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 70px;
+  margin: 0 70px;
+}
+.popup__content {
+  background: $color-light;
+  border-radius: 5px;
+  .popup__form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 340px;
+    margin: 0 70px;
+  }
+  .popup__input-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $color-popupinput;
+    width: 340px;
+    padding: 16px 20px;
+    input {
+      width: 300px;
+    }
+  }
+  input {
+    @include font($size: 1.6rem, $height: 2.4rem, $weight: 400);
+    color: $color-popupplaceholder;
+    background: $color-popupinput;
+  }
+  img {
+    width: 24px;
+    height: 24px;
+  }
+  .popup__input {
+    display: inline-block;
+    padding: 16px 20px;
+  }
+  .popup__input,
+  .popup__input-block {
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+}
+
+.popup__button {
+  margin-bottom: 139px;
+}
+.popup__close {
+}
+.popup__link {
+  position: relative;
+  left: 74%;
+  padding-bottom: 32px;
+  a {
+    font-family: "Nunito Sans";
+    @include font($size: 1.2rem, $height: 1.6rem, $weight: 400);
+    color: $color-input-focus;
+  }
+}
+.popup__title {
+  text-align: center;
+  color: $color-default;
+  @include font($size: 3.2rem, $height: 3.2rem, $weight: 800);
+  padding: 105px 0 32px;
+}

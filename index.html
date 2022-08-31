@@ -9,7 +9,7 @@
     <title>tocha</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header lock-padding">
       <div class="wrapper header__wrapper">
         <div class="header__logo">
           <a class="logo-text" href=""
@@ -18,7 +18,7 @@
           >
         </div>
         <div class="header__buttons">
-          <div ><a href="" class="button header__button">Вход</a></div>
+          <div ><a href="#popup" class="button header__button popup-link">Вход</a></div>
           <div>
             <a href="" class="button button_colored">Регистрация</a>
           </div>
@@ -204,12 +204,34 @@
 
         </div>
       </section>
+      <div class="popup" id = "popup">
+        <div class="popup__wrapper">
+          <div class="popup__content">
+            <a class="popup__close close-popup" href="#">
+              <div>
+              <div class="leftright"></div>
+              <div class="rightleft"></div></div></a>
+            <div class="popup__title">Вход</div>
+            <form action="#" class="popup__form">
+              <input type="tel" placeholder="Телефон" class="popup__input">
+              <div class="popup__input-block"> 
+              <input type="password" placeholder="Пароль">
+              <img src="img/Group.svg" alt="eye"></div>
+              <a href="" class="popup__link">Напомнить пароль</a>
+              <button class="button button_colored popup__button">Войти</button>
+            </form>
+          </div>
+  
+        </div>
+      </div>
     </main>
     <footer class="footer">
       <div class="wrapper footer__wrapper">
         <div class="footer__content">© 2021 Tocha. Все права защищены</div>
       </div>
     </footer>
+
     <script src="js/app.js"></script>
+    <script src="js/popup.js"></script>
   </body>
 </html>
