@@ -18,9 +18,9 @@
           >
         </div>
         <div class="header__buttons">
-          <div ><a href="#popup" class="button header__button popup-link">Вход</a></div>
+          <div ><a href="#entrance" class="button header__button popup-link">Вход</a></div>
           <div>
-            <a href="" class="button button_colored">Регистрация</a>
+            <a href="#register" class="button button_colored popup-link">Регистрация</a>
           </div>
         </div>
       </div>
@@ -204,7 +204,8 @@
 
         </div>
       </section>
-      <div class="popup" id = "popup">
+
+      <div class="popup" id = "entrance">
         <div class="popup__wrapper">
           <div class="popup__content">
             <a class="popup__close close-popup" href="#">
@@ -215,8 +216,28 @@
             <form action="#" class="popup__form">
               <input type="tel" placeholder="Телефон"> 
               <input type="password" placeholder="Пароль">
-              <div class="popup__link"><a href="" >Напомнить пароль</a></div>
+              <div class="popup__reminder"><a href="" >Напомнить пароль</a></div>
               <button class="button button_colored popup__button">Войти</button>
+            </form>
+          </div>
+  
+        </div>
+      </div>
+      <div class="popup" id = "register">
+        <div class="popup__wrapper">
+          <div class="popup__content">
+            <a class="popup__close close-popup" href="#">
+              <div>
+              <div class="leftright"></div>
+              <div class="rightleft"></div></div></a>
+            <div class="popup__title">Регистрация</div>
+            <form action="#" class="popup__form">
+              <input type="tel" placeholder="Телефон"> 
+              <input type="email" placeholder="Электронная почта"> 
+              <input type="password" placeholder="Пароль">
+              <input type="password" placeholder="Повторите пароль">
+              
+              <button class="button button_colored popup__button popup__button-register">Войти</button>
             </form>
           </div>
   

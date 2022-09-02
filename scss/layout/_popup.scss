@@ -53,9 +53,9 @@ input {
   &:focus {
     border: 1px solid $color-input-focus;
   }
-}
-input[type="tel"] {
-  margin: 0 0 10px 0;
+  &:not(:last-child) {
+    margin: 0 0 10px 0;
+  }
 }
 
 input,
@@ -78,12 +78,14 @@ input[type="password"] {
 
 .popup__button {
   margin-bottom: 139px;
-  display: block;
+  margin-top: 32px;
+}
+.popup__button-register {
+  margin-bottom: 63px;
 }
 
-.popup__link {
+.popup__reminder {
   align-self: flex-end;
-  padding-bottom: 32px;
   a {
     font-family: "Nunito Sans";
     @include font($size: 1.2rem, $height: 1.6rem, $weight: 400);

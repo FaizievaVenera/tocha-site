@@ -4,6 +4,7 @@ const lockPadding = document.querySelectorAll(".lock-padding");
 
 let unlock = true;
 const timeout = 800;
+
 /*Условие открытия popup*/
 if (popupLinks.length > 0) {
   for (let i = 0; i < popupLinks.length; i++) {
@@ -16,6 +17,7 @@ if (popupLinks.length > 0) {
     });
   }
 }
+
 /*Условие закрытия popup*/
 const popupCloseIcon = document.querySelectorAll(".close-popup");
 if (popupCloseIcon.length > 0) {

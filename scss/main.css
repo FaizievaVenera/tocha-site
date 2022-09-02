@@ -515,133 +515,6 @@ li:not(:last-child) {
 }
 
 /*Pages*/
-.popup {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  top: 0;
-  left: 0;
-  opacity: 0;
-  visibility: hidden;
-  overflow-x: auto;
-  overflow-y: hidden;
-  -webkit-transition: all 0.8 ease 0s;
-  transition: all 0.8 ease 0s;
-}
-
-.popup.open {
-  opacity: 1;
-  visibility: visible;
-}
-
-.popup__wrapper {
-  min-height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.popup__content {
-  background: #fff;
-  border-radius: 5px;
-}
-
-.popup__title {
-  text-align: center;
-  color: #685ed6;
-  font-size: 3.2rem;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 3.2rem;
-  padding: 105px 0 32px;
-}
-
-.popup__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 0 70px;
-}
-
-input {
-  font-size: 1.6rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 2.4rem;
-  color: #212121;
-  background: #f7f7fd;
-  border-radius: 4px;
-  padding: 8px 20px;
-  border: 1px solid #f7f7fd;
-}
-
-input:hover {
-  border: 1px solid #e8e6f8;
-}
-
-input:focus {
-  border: 1px solid #605dec;
-}
-
-input[type="tel"] {
-  margin: 0 0 10px 0;
-}
-
-input,
-.popup__button {
-  width: 340px;
-}
-
-input[type="password"] {
-  background: url(/img/Group.svg) no-repeat right 20px bottom 8px, #f7f7fd;
-  margin: 0 0 8px 0;
-}
-
-input[type="password"]:hover {
-  border: 1px solid #e8e6f8;
-}
-
-input[type="password"]:focus {
-  border: 1px solid #605dec;
-}
-
-.popup__button {
-  margin-bottom: 139px;
-  display: block;
-}
-
-.popup__link {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  padding-bottom: 32px;
-}
-
-.popup__link a {
-  font-family: "Nunito Sans";
-  font-size: 1.2rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.6rem;
-  color: #605dec;
-}
-
 /*Theme*/
 /*Vendors*/
 /*Layout*/
@@ -787,5 +660,135 @@ input[type="password"]:focus {
 .popup__close div:active .leftright,
 .popup__close div:active .rightleft {
   background: #18e1f7;
+}
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-transition: all 0.8 ease 0s;
+  transition: all 0.8 ease 0s;
+}
+
+.popup.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup__wrapper {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.popup__content {
+  background: #fff;
+  border-radius: 5px;
+}
+
+.popup__title {
+  text-align: center;
+  color: #685ed6;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 3.2rem;
+  padding: 105px 0 32px;
+}
+
+.popup__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 70px;
+}
+
+input {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.4rem;
+  color: #212121;
+  background: #f7f7fd;
+  border-radius: 4px;
+  padding: 8px 20px;
+  border: 1px solid #f7f7fd;
+}
+
+input:hover {
+  border: 1px solid #e8e6f8;
+}
+
+input:focus {
+  border: 1px solid #605dec;
+}
+
+input:not(:last-child) {
+  margin: 0 0 10px 0;
+}
+
+input,
+.popup__button {
+  width: 340px;
+}
+
+input[type="password"] {
+  background: url(/img/Group.svg) no-repeat right 20px bottom 8px, #f7f7fd;
+  margin: 0 0 8px 0;
+}
+
+input[type="password"]:hover {
+  border: 1px solid #e8e6f8;
+}
+
+input[type="password"]:focus {
+  border: 1px solid #605dec;
+}
+
+.popup__button {
+  margin-bottom: 139px;
+  margin-top: 32px;
+}
+
+.popup__button-register {
+  margin-bottom: 63px;
+}
+
+.popup__reminder {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.popup__reminder a {
+  font-family: "Nunito Sans";
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.6rem;
+  color: #605dec;
 }
 /*# sourceMappingURL=main.css.map */
