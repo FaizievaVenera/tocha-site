@@ -213,9 +213,9 @@
               <div class="leftright"></div>
               <div class="rightleft"></div></div></a>
             <div class="popup__title">Вход</div>
-            <form action="#" class="popup__form">
-              <input type="tel" placeholder="Телефон"> 
-              <input type="password" placeholder="Пароль">
+            <form action="#" class="popup__form" id = 'form'>
+              <div class="input"><input type="tel" placeholder="Телефон"> </div>
+              <div class="input"><input type="password" placeholder="Пароль"></div>
               <div class="popup__reminder"><a href="" >Напомнить пароль</a></div>
               <button class="button button_colored popup__button">Войти</button>
             </form>
@@ -231,11 +231,13 @@
               <div class="leftright"></div>
               <div class="rightleft"></div></div></a>
             <div class="popup__title">Регистрация</div>
-            <form action="#" class="popup__form">
-              <input type="tel" placeholder="Телефон"> 
-              <input type="email" placeholder="Электронная почта"> 
-              <input type="password" placeholder="Пароль">
-              <input type="password" placeholder="Повторите пароль">
+            <form action="#" class="popup__form  form-register" id = 'form'>
+              <div class="input">
+              <input type="tel" placeholder="Телефон" class="tel">
+            </div>
+              <div class="input"><input type="email" placeholder="Электронная почта"> </div>
+              <div class="input"><input type="password" placeholder="Пароль"></div>
+              <div class="input"><input type="password" placeholder="Повторите пароль"></div>
               
               <button class="button button_colored popup__button popup__button-register">Войти</button>
             </form>
@@ -252,5 +254,6 @@
 
     <script src="js/app.js"></script>
     <script src="js/popup.js"></script>
+    <script src="js/validation.js"></script>
   </body>
 </html>
