@@ -21,68 +21,72 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px 70px;
-  margin: 0 70px;
 }
 .popup__content {
   background: $color-light;
   border-radius: 5px;
-  .popup__form {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 340px;
-    margin: 0 70px;
+}
+
+.popup__title {
+  text-align: center;
+  color: $color-default;
+  @include font($size: 3.2rem, $height: 3.2rem, $weight: 800);
+  padding: 105px 0 32px;
+}
+.popup__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 70px;
+}
+input {
+  @include font($size: 1.6rem, $height: 2.4rem, $weight: 400);
+  color: $color-popupplaceholder;
+  background: $color-popupinput;
+  border-radius: 4px;
+  padding: 8px 20px;
+  border: 1px solid $color-popupinput;
+  &:hover {
+    border: 1px solid $color-input-hover;
   }
-  .popup__input-block {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: $color-popupinput;
-    width: 340px;
-    padding: 16px 20px;
-    input {
-      width: 300px;
-    }
+  &:focus {
+    border: 1px solid $color-input-focus;
   }
-  input {
-    @include font($size: 1.6rem, $height: 2.4rem, $weight: 400);
-    color: $color-popupplaceholder;
-    background: $color-popupinput;
+}
+input[type="tel"] {
+  margin: 0 0 10px 0;
+}
+
+input,
+.popup__button {
+  width: 340px;
+}
+
+input[type="password"] {
+  background: url(/img/Group.svg) no-repeat right 20px bottom 8px,
+    $color-popupinput;
+  margin: 0 0 8px 0;
+
+  &:hover {
+    border: 1px solid $color-input-hover;
   }
-  img {
-    width: 24px;
-    height: 24px;
-  }
-  .popup__input {
-    display: inline-block;
-    padding: 16px 20px;
-  }
-  .popup__input,
-  .popup__input-block {
-    border-radius: 4px;
-    margin-bottom: 10px;
+  &:focus {
+    border: 1px solid $color-input-focus;
   }
 }
 
 .popup__button {
   margin-bottom: 139px;
+  display: block;
 }
-.popup__close {
-}
+
 .popup__link {
-  position: relative;
-  left: 74%;
+  align-self: flex-end;
   padding-bottom: 32px;
   a {
     font-family: "Nunito Sans";
     @include font($size: 1.2rem, $height: 1.6rem, $weight: 400);
     color: $color-input-focus;
   }
-}
-.popup__title {
-  text-align: center;
-  color: $color-default;
-  @include font($size: 3.2rem, $height: 3.2rem, $weight: 800);
-  padding: 105px 0 32px;
 }

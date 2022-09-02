@@ -546,91 +546,11 @@ li:not(:last-child) {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 30px 70px;
-  margin: 0 70px;
 }
 
 .popup__content {
   background: #fff;
   border-radius: 5px;
-}
-
-.popup__content .popup__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 340px;
-  margin: 0 70px;
-}
-
-.popup__content .popup__input-block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: #f7f7fd;
-  width: 340px;
-  padding: 16px 20px;
-}
-
-.popup__content .popup__input-block input {
-  width: 300px;
-}
-
-.popup__content input {
-  font-size: 1.6rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 2.4rem;
-  color: #212121;
-  background: #f7f7fd;
-}
-
-.popup__content img {
-  width: 24px;
-  height: 24px;
-}
-
-.popup__content .popup__input {
-  display: inline-block;
-  padding: 16px 20px;
-}
-
-.popup__content .popup__input,
-.popup__content .popup__input-block {
-  border-radius: 4px;
-  margin-bottom: 10px;
-}
-
-.popup__button {
-  margin-bottom: 139px;
-}
-
-.popup__link {
-  position: relative;
-  left: 74%;
-  padding-bottom: 32px;
-}
-
-.popup__link a {
-  font-family: "Nunito Sans";
-  font-size: 1.2rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.6rem;
-  color: #605dec;
 }
 
 .popup__title {
@@ -641,6 +561,85 @@ li:not(:last-child) {
   font-weight: 800;
   line-height: 3.2rem;
   padding: 105px 0 32px;
+}
+
+.popup__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 70px;
+}
+
+input {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.4rem;
+  color: #212121;
+  background: #f7f7fd;
+  border-radius: 4px;
+  padding: 8px 20px;
+  border: 1px solid #f7f7fd;
+}
+
+input:hover {
+  border: 1px solid #e8e6f8;
+}
+
+input:focus {
+  border: 1px solid #605dec;
+}
+
+input[type="tel"] {
+  margin: 0 0 10px 0;
+}
+
+input,
+.popup__button {
+  width: 340px;
+}
+
+input[type="password"] {
+  background: url(/img/Group.svg) no-repeat right 20px bottom 8px, #f7f7fd;
+  margin: 0 0 8px 0;
+}
+
+input[type="password"]:hover {
+  border: 1px solid #e8e6f8;
+}
+
+input[type="password"]:focus {
+  border: 1px solid #605dec;
+}
+
+.popup__button {
+  margin-bottom: 139px;
+  display: block;
+}
+
+.popup__link {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding-bottom: 32px;
+}
+
+.popup__link a {
+  font-family: "Nunito Sans";
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.6rem;
+  color: #605dec;
 }
 
 /*Theme*/
