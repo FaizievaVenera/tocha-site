@@ -1,13 +1,18 @@
 .links {
   background: $color-text;
 }
-.links__wrapper {
+.links-wrapper{
+  padding-top: 104px;
   display: flex;
   justify-content: space-between;
-  padding-top: 104px;
+
+}
+.links__wrapper {
+  display: flex;
+  justify-content: right;
+  
 }
 .logo {
-  padding-top: 7px;
   padding-right: 130px;
   a {
     color: $color-light;
@@ -29,8 +34,24 @@ li {
 }
 .about-us {
   width: 160px;
+  //padding-left: 126px;
 }
 .support {
   padding-right: 100px;
   padding-bottom: 78px;
+}
+@media screen and (max-width:800px)  {
+  .links-wrapper{
+    //display: block;
+  }
+  .links__wrapper{
+    flex-direction: column;
+  }
+  .logo{
+    //max-width: 50%;
+  }
+  .about-us{
+   // position: relative;
+
+  }
 }

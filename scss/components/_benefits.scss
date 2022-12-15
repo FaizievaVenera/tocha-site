@@ -21,5 +21,30 @@
 }
 
 .layout-2-rows {
-  width: 428px;
+  max-width: 428px;
+}
+
+@media screen and (max-width:1030px){
+  .benefits__desc {
+    margin-right: 0px;
+}
+}
+
+@media screen and (max-width:900px){
+  .benefits__columns{
+    flex-direction: column;
+    justify-content: center;
+    & > img{
+      max-width: 244px;
+      display: block;
+      margin-left: auto ;
+      margin-right: auto;
+
+    }
+  }
+  
+.benefits__desc{
+  margin-left: auto ;
+  margin-right: auto;
+}
 }

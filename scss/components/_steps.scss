@@ -17,7 +17,7 @@
   right:200px;
 }
 .steps-fon{
-  
+  overflow: hidden;
   position: absolute;
   top:81%;
   z-index: 0;
@@ -66,5 +66,25 @@ transform: translate(-50%, -50%);
 .two {
   padding-top: 65px;
 }
-.background {
+
+@media screen and (max-width:1100px){
+  .vector-left, .vector-right{
+    display: none;
+  }
+  .two {
+    padding-top: 0;
+}
+.step-block img{
+  width:210px;
+}
+}
+
+@media screen and (max-width:770px){
+  .step-text{
+    width: 255px;
+  }
+.steps__columns{
+  overflow: hidden;
+}
+
 }

@@ -3,5 +3,8 @@
 }
 
 .layout-3-columns {
-  @include columns($width: 33%);
+  //@include columns($width: 33%);
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
 }

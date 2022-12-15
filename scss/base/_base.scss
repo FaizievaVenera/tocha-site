@@ -22,19 +22,24 @@ p{
   @include font($size: 1.6rem, $height: 2.6rem, $weight: 400);
 }
 
-.background{
-  position: relative;
-   z-index:1;
-   overflow:hidden
- }
- .background::before{
-   content: url("./../img/fon_for_promo.png");
-   background: url("./../img/fon_for_promo.png");
-   z-index:-1;
-   display: inline-block;
-   position:absolute;
-   left:0;
-   top:0;
-   width: 100%;
-   opacity: 0.5;
- }
+// .background{
+//   //position: relative;
+//    z-index:1;
+//    overflow:hidden
+//  }
+//  .background::before{
+//    content: url("./../img/fon_for_promo.png");
+//    background: url("./../img/fon_for_promo.png");
+//    z-index:-1;
+//    display: inline-block;
+//    position:absolute;
+//    left:0;
+//    top:0;
+//    width: 100%;
+//    opacity: 0.5;
+//  }
+@media screen and (max-width:800px) {
+  h1{
+    @include font($size: 3.2rem, $height: 4rem, $weight: 800);
+  }
+}
