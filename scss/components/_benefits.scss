@@ -1,26 +1,25 @@
 .benefits {
-  padding: 129px 0 0 0;
+  padding-top: 69px;
+  padding-bottom: 82px;
+  background: $background-header;
 }
-.benefits__title {
+.benefits__desc{
+  margin-right: 76px;
+}
+.benefit__title {
+  padding-top: 20px;
   padding-bottom: 68px;
 }
-.benefits__block > *:not(:first-child) {
-  padding: 48px 0 0 0;
+.benefits__icon{
+  margin-right: 26px;
 }
-.benefit_block {
-  display: flex;
+.benefits__h3{
+  margin-bottom: 8px;
+}
+.benefits__block:not(last-child) {
+  padding-bottom: 48px;
 }
 
-.benefit__icon {
-  padding-right: 26px;
-}
-.benefit__description {
-  display: flex;
-  flex-direction: column;
-}
-.benefit_title {
-  padding-bottom: 8px;
-}
-.benefit__text {
+.layout-2-rows {
   width: 428px;
 }

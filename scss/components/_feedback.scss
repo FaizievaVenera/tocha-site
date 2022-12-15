@@ -1,0 +1,11 @@
+.feedback{
+  padding-top: 150px;
+  background: $background-header;
+  position: relative;
+  z-index: 10;
+}
+.feedback__marks{
+  position: absolute;
+  top:120px;
+  right: 0;
+}

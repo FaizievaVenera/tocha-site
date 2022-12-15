@@ -1,259 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="scss/main.css" />
-    <link rel="icon" type="image/png" href="img/logo.png" />
-    <title>tocha</title>
-  </head>
-  <body>
-    <header class="header lock-padding">
-      <div class="wrapper header__wrapper">
-        <div class="header__logo">
-          <a class="logo-text" href=""
-            ><img src="img/logo.png" alt="logo" class="header__image" />
-            tocha</a
-          >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./scss/main.css">
+  <title>Tocha</title>
+</head>
+<body>
+  <div class="background">
+  <header class="header">
+    <div class="wrapper header__wrapper">
+      <a href="#" class="logo-text">
+        <img src="./img/logo.png" alt="logo">tocha
+      </a>
+      <div class="header__buttons">
+        <div><a href="#entrance" class="button button__entry popup-link">Вход</a></div>
+        <div><a href="#register" class="button button_colored popup-link">Регистрация</a></div>
         </div>
-        <div class="header__buttons">
-          <div ><a href="#entrance" class="button header__button popup-link">Вход</a></div>
-          <div>
-            <a href="#register" class="button button_colored popup-link">Регистрация</a>
+    </div>
+  </header>
+  <main>
+    <section class="promo">
+      <div class="wrapper promo__wrapper">
+      <div class="layout-2-columns">
+        <div class="promo__desc">
+          <h1><span>Telegram чат</span><br> на вашем сайте</h1>
+          <p class="promo__text">Общение с клиентами станет простым
+            и удобным, а подключение займет 5 минут.
+            Первый месяц — <span>бесплатно!</span></p>
+            <button class="button button_colored">Подключить</button>
+        </div>
+        <img src="./img/ilustration.svg" alt="promo" class="promo__img">
+      </div>
+    </div>
+    </section>
+  </div>
+    <section class="benefits">
+      <div class="wrapper benefits__wrapper">
+        <div class="layout-2-columns">
+          <div class="benefits__desc">
+            <h2 class="benefit__title">Tocha Online — это</h2>
+            <div class="benefits__block">
+              <div class="layout-2-columns">
+                <img src="./img/icon1.svg" alt="icon1" class="benefits__icon"> 
+                <div class="layout-2-rows">
+                  <h4 class="benefits__h3">Ничего личного</h4>
+                  <p>Отсутствие лишних приложений для операторов. Оператору не нужно учиться работать с чатом</p>
+                </div>
+                </div>  
+            </div>
+            <div class="benefits__block">
+              <div class="layout-2-columns">
+                <img src="./img/icon2.svg" alt="icon2" class="benefits__icon"> 
+                <div class="layout-2-rows">
+                  <h4 class="benefits__h3">Простота</h4>
+                  <p>Простая установка на сайт</p>
+                </div>
+                </div>  
+            </div>
+            <div class="benefits__block">
+              <div class="layout-2-columns">
+                <img src="./img/icon3.svg" alt="icon3" class="benefits__icon"> 
+                <div class="layout-2-rows">
+                  <h4 class="benefits__h3">Несколько ассистентов</h4>
+                  <p>Возможность подключения нескольких ассистентов</p>
+                </div>
+                </div>  
+            </div>
+            <div class="benefits__block">
+              <div class="layout-2-columns">
+                <img src="./img/icon4.svg" alt="icon4" class="benefits__icon"> 
+                <div class="layout-2-rows">
+                  <h4 class="benefits__h3">Кастомизация</h4>
+                  <p>Настройка интерфейса под нужды сайта</p>
+                </div>
+                </div>  
+            </div>
+          </div>
+          <img src="./img/img.svg" alt="iphone">
+        </div>
+      </div>
+    </section>
+    <section class="tariffs">
+      <div class="wrapper tariffs__wrapper">
+        <h3>Тарифы</h3>
+        <p class="tariffs__subtitle">Стоимость зависит от трафика сайта</p>
+        <div class="layout-3-columns">
+          <div class="tariff__block">
+            <p class="tariff_title">Бесплатно</p>
+            <div class="tariff_text">
+              <p class="tariff_value">Пробный период <br>на 1 месяц</p>
+              <p class="tariff_price">0₽/первый месяц</p>
+              <button class="button button_colored tariff_button">Подключить за 0₽</button>
+            </div>
+          </div>
+          <div class="tariff__block">
+            <p class="tariff_title">Базовый</p>
+            <div class="tariff_text">
+              <p class="tariff_value">Менее 1000 <br>посещений в сутки</p>
+              <p class="tariff_price">200₽/месяц</p>
+              <button class="button button_colored tariff_button">Подключить за 200₽</button>
+            </div>
+          </div>
+          <div class="tariff__block">
+            <p class="tariff_title">Премиум</p>
+            <div class="tariff_text">
+              <p class="tariff_value">Более 1000 <br>посещений в сутки</p>
+              <p class="tariff_price">500₽/месяц</p>
+              <button class="button button_colored tariff_button">Подключить за 500₽</button>
+            </div>
           </div>
         </div>
       </div>
-    </header>
-    <main>
-      <section class="promo">
-        <div class="wrapper promo__wrapper">
-          <div class="layout-2-columns">
-            <div class="promo__description">
-              <h1 class="promo__title_colored">Telegram чат</h1>
-              <h1 class="promo__title">на вашем сайте</h1>
-              <div class="promo__text">
-                Общение с клиентами станет простым <br />и удобным, а
-                подключение займет 5 минут. Первый месяц —
-                <span> бесплатно!</span>
-              </div>
-              <div class="promo__button">
-                <a href="" class="button button_colored">Подключить</a>
-              </div>
-            </div>
-            <div class="promo__img">
-              <img src="img/ilustration.svg" alt="" />
-            </div>
+    </section>
+    <section class="steps">
+      <div class="wrapper steps__wrapper">
+        <h3 class="steps__title">Всего 3 шага для подключения Telegram чата</h3>
+        <img src="./img/vector.svg" alt="vector" class="vector-left">
+        <img src="./img/vector-right.svg" alt="vector" class="vector-right">
+        <img src="./img/fon_for_step.png" alt="fon" class="steps-fon">
+        <div class="layout-3-columns steps__columns">
+          <div class="step-block">
+            <p class="step-number">1</p>
+            <p class="step-title">Telegram bot</p>
+            <p class="step-text">Вы создаёте Telegram бота для вашего сайта</p>
+            <img src="./img/X.svg" alt="iphone">
+          </div>
+          <div class="step-block two">
+            <p class="step-number">2</p>
+            <p class="step-title">Подключение Tocha</p>
+            <p class="step-text">Tocha подключает Telegram бота к вашиму сайту</p>
+            <img src="./img/iPhoneX.svg" alt="iphone">
+          </div>
+          <div class="step-block">
+            <p class="step-number">3</p>
+            <p class="step-title">Telegram-чат</p>
+            <p class="step-text">Консультант отвечает на вопросы посетителей сайта</p>
+            <img src="./img/iphone.svg" alt="iphone">
           </div>
         </div>
-      </section>
-      <section class="benefits">
-        <div class="wrapper benefits__wrapper">
-          <div class="layout-2-columns">
-            <div class="benefits__description">
-              <h1 class="benefits__title">Точка Online - это</h1>
-              <div class="benefits__block">
-              <div class="benefit_block">
-                <img class="benefit__icon" src="img/icon1.svg" alt="icon1"></img>
-                <div class="benefit__description">
-                  <h3 class="benefit__title">Ничего личного</h3>
-                  <p class="text benefit__text">Отсутствие лишних приложений для операторов. Оператору не нужно учиться работать с чатом</p>
-                </div>
-              </div>
-              <div class="benefit_block">
-                <img class="benefit__icon" src="img/icon2.svg" alt="icon2"></img>
-                <div class="benefit__description">
-                  <h3 class="benefit__title">Простота</h3>
-                  <p class="text benefit__text">Простая установка на сайт</p>
-                </div>
-              </div>
-              <div class="benefit_block">
-                <img class="benefit__icon" src="img/icon3.svg" alt="icon3"></img>
-                <div class="benefit__description">
-                  <h3 class="benefit__title">Несколько ассистентов</h3>
-                  <p class="text benefit__text">Возможность подключения нескольких ассистентов</p>
-                </div>
-              </div>
-              <div class="benefit_block">
-                <img class="benefit__icon" src="img/icon4.svg" alt="icon4"></img>
-                <div class="benefit__description">
-                  <h3 class="benefit__title">Кастомизация</h3>
-                  <p class="text benefit__text">Настройка интерфейса под нужны сайта</p>
-                </div>
-              </div>
-              </div>
-            </div>
-            
-            <div class="benefits__img">
-              <img class="benefits_image" src="img/img.svg" alt="messages" />
-            </div>
+      </div>
+    </section>
+    <section class="feedback">
+      <div class="wrapper feedback__wrapper">
+        <h3>Отзывы клиентов</h3>
+        <img src="./img/marks.png" alt="marks" class="feedback__marks">
+        <div class="feedback__block"></div>
+      </div>
+    </section>
+    <section class="links">
+      <div class="wrapper links__wrapper">
+        <div class="logo">
+          <img src="img/logo.png" alt="logo">
+          <a class="logo-text" href=""> tocha</a>
+      </div>    
+      <ul class="about-us">
+      <li class="link__title"><a>Telegram чат</a></li>
+      <li><a>О нас</a></li>
+      <li><a>Партнеры</a></li>
+      <li><a>Инструкция</a></li>
+      <li><a>Цены</a></li>
+      <li><a>Контакты</a></li>
+    </ul>
 
-          </div>
-
-          
-          </div>
-        </div>
-      </section>
-      <section class="tariffs">
-        <div class="wrapper tariffs__wrapper">
-          <div class="tariffs__title">
-            <h1>
-            Тарифы</h1></div>
-          <div class="tariffs__title">
-            <p class="text">
-            Стоимость зависит от трафика сайта</p></div>
-            <div class="layout-3-columns">
-              <div class="tariff__block">
-                <div class="tariff_title">Бесплатно</div>
-                <div class="tariff_text">
-                  <div class="tariff_value"><p>Пробный период на 1 месяц</p></div>
-                  <div class="price"><p>0₽/первый месяц</p></div>
-                  <div class="tariff_button"><a href="" class="button button_colored">Подключить за 0₽</a></div>
-                </div>
-              </div>
-              <div class="tariff__block">
-                <div class="tariff_title">Базовый</div>
-                <div class="tariff_text">
-                  <div class="tariff_value"><p>Менее 1000 посещений в сутки</p></div>
-                  <div class="price"><p>200₽/месяц</p></div>
-                  <div class="tariff_button"><a href="" class="button button_colored">Подключить за 200₽</a></div>
-                </div>
-              </div>
-              <div class="tariff__block">
-                <div class="tariff_title">Премиум</div>
-                <div class="tariff_text">
-                  <div class="tariff_value"><p>Более 1000 посещений в сутки</p></div>
-                  <div class="price"><p>500₽/месяц</p></div>
-                  <div class="tariff_button"><a href="" class="button button_colored">Подключить за 500₽</a></div>
-                </div>
-              </div>
-            </div>
-        
-        </div>
-      </section>
-      <section class="steps">
-        
-        <div class="wrapper steps__wrapper">
-          <h1 class="blocks__title">Всего 3 шага для подключения Telegram чата</h1>
-          <div class="layout-4-columns">
-          <div class="steps__blocks">
-            <div class="step-block">
-              <div class="step-number">1</div>
-              <div class="step-title">Telegram bot</div>
-              <div class="step-text">Вы создаёте Telegram бота для вашего сайта</div>
-              <img src="img/X.jpg" alt="iphone1">
-            </div>
-           
-            <div class="step-block two">
-              <div class="step-number">2</div>
-              <div class="step-title">Подключение Tocha</div>
-              <div class="step-text">Tocha подключает Telegram бота к вашему сайту</div>
-              <img src="img/iPhone X.jpg" alt="iphone2">
-            </div>
-            <div class="step-block">
-              <div class="step-number">3</div>
-              <div class="step-title">Telegram-чат</div>
-              <div class="step-text">Консультант отвечает на вопросы посетителей сайта</div>
-              <img src="img/iphone.jpg" alt="iphone3">
-            </div>
-          </div>
-          <div class="background"></div>
-        </div>
-        </div>
-      </section>
-      <section class="reviews"></section>
-      <section class="form">
-        <div class="wrapper form__wrapper">
-        <div class="layout-2-columns form_img">
-          <img src="img/Frame.svg" alt="form" class="form_image" >
-          <div class = "form_block">
-          <div class="form__title">Подключите Telegram чат уже сегодня</div>
-         <input type="text" class="form__input" placeholder="Введите e-mail">
-          <button class="form__button">отправить</button>
-        
-        </div>
-        
-        <form action="#">
-          
+    <ul class="support">
+    <li class="link__title"><a>Поддержка</a></li>
+    <li><a>Центр поддержки</a></li>
+    <li><a>Политика конфеденциальности</a></li>
+    <li><a>Документы оферта</a></li>
+    <li><a>Документы оферта</a></li>
+    <li><a>Статус</a></li>
+  </ul>
+  </div>
+</section>  
+  </main>
+  <div class="popup" id = "entrance">
+    <div class="popup__wrapper">
+      <div class="popup__content">
+        <a class="popup__close close-popup" href="#">
+          <div>
+          <div class="leftright"></div>
+          <div class="rightleft"></div></div></a>
+        <p class="popup__title">Вход</p>
+        <form action="#" class="popup__form" id = 'form'>
+          <input type="tel" placeholder="Телефон">
+          <input type="password" placeholder="Пароль">
+          <a href="#" class="popup__reminder">Напомнить пароль</a>
+          <button class="button button_colored popup__button">Войти</button>
         </form>
       </div>
-      </section>
-      <section class="links">
-        <div class="wrapper links__wrapper">
-          <div class="logo">
-              <img src="img/logo.png" alt="logo" class="" />
-              <a class="logo-text" href=""> tocha</a>
-          </div>              
-              <ul class="about-us">
-                <li class="link__title"><a>Telegram чат</a></li>
-              <li><a>О нас</a></li>
-              <li><a>Партнеры</a></li>
-              <li><a>Инструкция</a></li>
-              <li><a>Цены</a></li>
-              <li><a>Контакты</a></li>
-            </ul>
-
-            <ul class="support">
-              <li class="link__title"><a>Поддержка</a>  </li>
-            <li><a>Центр поддержки</a></li>
-            <li><a>Политика конфеденциальности</a></li>
-            <li><a>Документы оферта</a></li>
-            <li><a>Документы оферта</a></li>
-            <li><a>Статус</a></li>
-          </ul>
-
-        </div>
-      </section>
-
-      <div class="popup" id = "entrance">
-        <div class="popup__wrapper">
-          <div class="popup__content">
-            <a class="popup__close close-popup" href="#">
-              <div>
-              <div class="leftright"></div>
-              <div class="rightleft"></div></div></a>
-            <div class="popup__title">Вход</div>
-            <form action="#" class="popup__form" id = 'form'>
-              <div class="input"><input type="tel" placeholder="Телефон"> </div>
-              <div class="input"><input type="password" placeholder="Пароль"></div>
-              <div class="popup__reminder"><a href="" >Напомнить пароль</a></div>
-              <button class="button button_colored popup__button">Войти</button>
-            </form>
-          </div>
-  
-        </div>
+    </div>
+  </div>
+  <div class="popup" id = "register">
+    <div class="popup__wrapper">
+      <div class="popup__content">
+        <a class="popup__close close-popup" href="#">
+          <div>
+          <div class="leftright"></div>
+          <div class="rightleft"></div></div></a>
+        <div class="popup__title">Регистрация</div>
+        <form action="#" class="popup__form  form-register" id = 'form'>
+          <input type="tel" placeholder="Телефон" class="tel">
+          <input type="email" placeholder="Электронная почта">
+          <input type="password" placeholder="Пароль">
+          <input type="password" placeholder="Повторите пароль">
+          <button class="button button_colored popup__button popup__button-register">Войти</button>
+        </form>
       </div>
-      <div class="popup" id = "register">
-        <div class="popup__wrapper">
-          <div class="popup__content">
-            <a class="popup__close close-popup" href="#">
-              <div>
-              <div class="leftright"></div>
-              <div class="rightleft"></div></div></a>
-            <div class="popup__title">Регистрация</div>
-            <form action="#" class="popup__form  form-register" id = 'form'>
-              <div class="input">
-              <input type="tel" placeholder="Телефон" class="tel">
-            </div>
-              <div class="input"><input type="email" placeholder="Электронная почта"> </div>
-              <div class="input"><input type="password" placeholder="Пароль"></div>
-              <div class="input"><input type="password" placeholder="Повторите пароль"></div>
-              
-              <button class="button button_colored popup__button popup__button-register">Войти</button>
-            </form>
-          </div>
-  
-        </div>
-      </div>
-    </main>
-    <footer class="footer">
-      <div class="wrapper footer__wrapper">
-        <div class="footer__content">© 2021 Tocha. Все права защищены</div>
-      </div>
-    </footer>
-
-    <script src="js/app.js"></script>
-    <script src="js/popup.js"></script>
-    <script src="js/validation.js"></script>
-  </body>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="wrapper footer__wrapper">
+      <div class="footer__content">© 2021 Tocha. Все права защищены</div>
+    </div>
+  </footer>
+  <script src="./js/popup.js"></script>
+</body>
 </html>

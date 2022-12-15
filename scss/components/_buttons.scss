@@ -9,11 +9,27 @@
 .button_colored {
   background: $color-default;
   color: $color-light;
-
   &:hover {
     background: $color-button-hover;
   }
   &:active {
     background: $color-button-active;
+  }
+}
+
+.header__buttons{
+  display: flex;
+}
+.button__entry {
+  background-color: $color-violet;
+  margin-right: 12px;
+  transition: all 0.3s;
+  color: $color-default;
+  &:hover {
+    background: $color-headerbutton-hover;
+  }
+  &:active {
+    background: $color-default;
+    color: $color-light;
   }
 }

@@ -1,8 +1,10 @@
+
 .promo__wrapper {
-  padding: 92px 0 0 0;
+  padding-top: 92px;
+  width: 100%;
 }
-.promo__description {
-  margin: 35px 0 0 0;
+.promo__desc {
+  margin-top: 35px;
 }
 span {
   color: $color-default;
@@ -13,10 +15,12 @@ span {
 }
 .promo__text {
   @include font($size: 2.4rem, $height: 3.4rem, $weight: 400);
-  padding: 24px 0 0 0;
-  width: 482px;
+  padding-top: 24px;
+ //width: 482px;
+  margin-bottom: 32px;
 }
-.promo__button {
-  display: inline-block;
-  margin: 32px 0 0 0;
+.promo__img{
+  max-width: 100%;
+  margin-left: -120px;
 }
+

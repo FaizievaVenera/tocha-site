@@ -7,6 +7,7 @@
   left: 0;
   opacity: 0;
   visibility: hidden;
+  z-index: 10;
   overflow-x: auto;
   overflow-y: hidden;
   transition: all 0.8 ease 0s;
@@ -40,7 +41,7 @@
   flex-direction: column;
   padding: 0 70px;
 }
-.input:not(:last-child) {
+input:not(:last-child) {
   margin: 0 0 10px 0;
 }
 

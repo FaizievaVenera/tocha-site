@@ -1,5 +1,6 @@
+
 .header__wrapper {
-  padding: 32px 0 0 0;
+  padding-top: 34px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,25 +10,9 @@
   @include font($size: 2.8rem, $height: 2.1rem, $weight: 700);
   display: flex;
   align-items: center;
-}
-.header__logo a {
   color: $color-text;
 }
 
-.header__buttons {
-  display: flex;
-  justify-content: left;
-}
 
-.header__button {
-  background-color: $color-violet;
-  margin-right: 12px;
-  transition: all 0.3s;
-  &:hover {
-    background: $color-headerbutton-hover;
-  }
-  &:active {
-    background: $color-default;
-    color: $color-light;
-  }
-}
+
+
