@@ -5,6 +5,8 @@
   padding-top: 104px;
   display: flex;
   justify-content: space-between;
+  padding-right: 23px;
+  padding-right: 23px;
 
 }
 .links__wrapper {
@@ -47,8 +49,8 @@ li {
   .links__wrapper{
     flex-direction: column;
   }
-  .logo{
-    //max-width: 50%;
+  .support{
+    padding-right: 0;
   }
   .about-us{
    // position: relative;

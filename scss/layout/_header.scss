@@ -13,6 +13,8 @@
   color: $color-text;
 }
 
-
-
-
+@media screen and (max-width:500px) {
+  .header__buttons{
+    display: none;
+  }
+}

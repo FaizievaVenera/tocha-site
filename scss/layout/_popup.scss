@@ -12,6 +12,9 @@
   overflow-y: hidden;
   transition: all 0.8 ease 0s;
 }
+.header__burger{
+  display: none;
+}
 .popup.open {
   opacity: 1;
   visibility: visible;
@@ -103,4 +106,10 @@ input[type="password"] {
     @include font($size: 1.2rem, $height: 1.6rem, $weight: 400);
     color: $color-input-focus;
   }
+}
+@media screen and (max-width:500px) {
+  .header__burger{
+    display: block;
+    width: 30px;
+  }  
 }
